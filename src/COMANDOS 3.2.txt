@@ -1,6 +1,6 @@
-git clone https://github.com/leandavi/davidzin.git
+git clone  https://github.com/leandavi/leanvida.git
 
-cd Davidzin
+cd Leanvida
 
 chmod +x badut.sh
 

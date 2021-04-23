@@ -47,7 +47,7 @@ const lolis = require('lolis.life')
 const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-/*const { xp } = require('./database/menu/xp')
+const { xp } = require('./database/menu/xp')
 const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
@@ -101,7 +101,7 @@ const getLevelingXp = (userId) => {
 
         const getLevelingId = (userId) => {
             let position = false
-            Object.keys(_level).forEach((i) => {
+            Object.keys(_level).forEach((i) => 
                 if (_level[i].jid === userId) {
                     position = i
                 }
@@ -2005,7 +2005,8 @@ break
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
 					reply('De acordo com o percentual gay:\n\n'+anu.desc+anu.persen)
 					break
-			  case 'next':               
+			  case 'next':
+               
                 if (isGroup) return  reply( 'NÃO PODE ESTAR EM GRUPO KAK')
                 await reply('Ache um companheiro >_<')
                 await reply(`wa.me/${anug}`)
@@ -3184,7 +3185,7 @@ break
 								client.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
 							})
 						})
-					/*} else if ((isMedia || isQuotedImage) && colors.includes(args[0])) {
+					} else if ((isMedia || isQuotedImage) && colors.includes(args[0])) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')

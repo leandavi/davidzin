@@ -3197,7 +3197,7 @@ break
 								client.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
 							})
 						})
-					/*} else if ((isMedia || isQuotedImage) && colors.includes(args[0])) {
+					} else if ((isMedia || isQuotedImage) && colors.includes(args[0])) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
@@ -3368,7 +3368,7 @@ break
 					break
 					case 'ichiadmin':
 					tod = await getBuffer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT TOBIZIN ✨* 」\n*│+ wa.me/558688275801*╰──────*「 *TOBIZIN* 」*────*\n\n*_SE QUER SER ADMIN DO BOT TOBIZIN_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT LEANZIN✨* 」\n*│+ wa.me/5571996452136*╰──────*「 *LEAN* 」*────*\n\n*_SE QUER SER ADMIN DO BOT LEAN⁷_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
